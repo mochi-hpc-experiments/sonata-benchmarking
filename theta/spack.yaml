@@ -3,7 +3,7 @@ spack:
   - mochi-sonata +benchmark @0.4
   concretization: together
   repos:
-  - /home/mdorier/sds-repo
+  - /path/to/sds-repo
   packages:
     libfabric:
       variants: fabrics=gni
