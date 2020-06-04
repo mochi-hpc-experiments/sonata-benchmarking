@@ -1,0 +1,43 @@
+spack:
+  specs:
+  - mochi-sonata +benchmark @0.4
+  concretization: together
+  repos:
+  - /home/mdorier/sds-repo
+  packages:
+    libfabric:
+      variants: fabrics=gni
+      paths: {}
+      version: []
+      modules: {}
+      buildable: true
+      providers: {}
+      target: []
+      compiler: []
+    cmake:
+      modules:
+        cmake@3.14.5: cmake/3.14.5
+      buildable: false
+      paths: {}
+      version: []
+      providers: {}
+      target: []
+      compiler: []
+    mercury:
+      variants: +udreg ~boostsys
+      paths: {}
+      version: [ master ]
+      modules: {}
+      buildable: true
+      providers: {}
+      target: []
+      compiler: []
+    mpich:
+      modules:
+        mpich@7.7.3 arch=cray-cnl6-mic_knl: cray-mpich/7.7.3
+      buildable: false
+      paths: {}
+      version: []
+      providers: {}
+      target: []
+      compiler: []

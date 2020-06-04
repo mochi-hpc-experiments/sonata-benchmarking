@@ -1,0 +1,30 @@
+#!/bin/bash
+#COBALT -A radix-io 
+#COBALT -n 2
+#COBALT -t 1:00:00
+#COBALT --mode script
+#COBALT -q debug-flat-quad
+#COBALT --attrs ssds=required:ssd_size=128
+
+set -eu
+
+#CONFIG=$1
+HERE=`basename "$0"`
+export MPICH_GNI_NDREG_ENTRIES=1024
+#export MARGO_ENABLE_PROFILING=1
+#export MARGO_ENABLE_DIAGNOSTICS=1
+
+echo "Setting up spack and modules"
+source $HOME/spack/share/spack/setup-env.sh
+export MODULEPATH=$MODULEPATH:/spack/share/spack/modules/cray-cnl6-mic_knl
+spack env activate .
+spack load -r mochi-sonata
+
+echo "Starting benchmark"
+
+time aprun -n 2 -N 1 -cc none sonata-benchmark ${CONFIG}
+
+mkdir $COBALT_JOBID-results
+mv ${COBALT_JOBID}.* $COBALT_JOBID-results
+
+echo "Done!"
