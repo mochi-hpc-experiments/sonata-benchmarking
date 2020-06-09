@@ -5,6 +5,8 @@
 #BSUB -W 1:00
 #BSUB -nnodes 2
 #BSUB -alloc_flags NVME
+#BSUB -J sonata-benchmarking
+#BSUB -o sonata-benchmarking.o%J
 
 set -eu
 
@@ -20,6 +22,6 @@ spack load -r mochi-sonata
 
 echo "Starting benchmark"
 
-time jsrun -n 2 -r 1 -g ALL_GPU sonata-benchmark ${CONFIG}
+time jsrun -n 2 -r 1 -g ALL_GPUS sonata-benchmark ${CONFIG}
 
 echo "Done!"
