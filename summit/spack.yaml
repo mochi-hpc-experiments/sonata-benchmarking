@@ -1,0 +1,52 @@
+spack:
+  specs:
+  - mochi-sonata +benchmark @0.4
+  concretization: together
+  repos:
+  - /ccs/home/carns/working/src/mochi/sds-repo
+  packages:
+    libfabric:
+      variants: fabrics=verbs,rxm,mrail
+      paths: {}
+      version: []
+      modules: {}
+      buildable: true
+      providers: {}
+      target: []
+      compiler: []
+    cmake:
+      modules:
+        cmake@3.14.5: cmake/3.14.5
+      buildable: false
+      paths: {}
+      version: []
+      providers: {}
+      target: []
+      compiler: []
+    mercury:
+      variants: ~boostsys
+      paths: {}
+      version: [ master ]
+      modules: {}
+      buildable: true
+      providers: {}
+      target: []
+      compiler: []
+    spectrum-mpi:
+      modules:
+        spectrum-mpi@10.3.1.2%gcc: spectrum-mpi/10.3.1.2-20200121
+      buildable: false
+      paths: {}
+      version: []
+      providers: {}
+      target: []
+      compiler: []
+    rdma-core:
+      modules:
+        rdma-core@20: rdma-core/20
+      buildable: false
+      paths: {}
+      version: []
+      providers: {}
+      target: []
+      compiler: []
