@@ -1,0 +1,25 @@
+#!/bin/bash
+
+#BSUB -N
+#BSUB -P CSC332
+#BSUB -W 1:00
+#BSUB -nnodes 2
+#BSUB -alloc_flags NVME
+
+set -eu
+
+CONFIG=$1
+HERE=`basename "$0"`
+#export MARGO_ENABLE_PROFILING=1
+#export MARGO_ENABLE_DIAGNOSTICS=1
+
+echo "Setting up spack and modules"
+source $HOME/working/src/spack/share/spack/setup-env.sh
+spack env activate .
+spack load -r mochi-sonata
+
+echo "Starting benchmark"
+
+time jsrun -n 2 -r 1 -g ALL_GPU sonata-benchmark ${CONFIG}
+
+echo "Done!"
