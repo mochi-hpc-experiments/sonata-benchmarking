@@ -8,7 +8,7 @@
 
 set -eu
 
-CONFIG=$1
+CONFIG=config.json
 HERE=`basename "$0"`
 #export MARGO_ENABLE_PROFILING=1
 #export MARGO_ENABLE_DIAGNOSTICS=1

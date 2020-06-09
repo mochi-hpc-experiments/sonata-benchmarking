@@ -6,4 +6,4 @@ How to run on Summit
 * In this folder, run `spack env activate .` then `spack install`.
 * If your spack is not installed in $HOME/spack, edit run.bsub to source the correct path.
 * If needed, edit the project allocation in run.bsub to use your allocation.
-* Run `bsub run.bsub config.json` to submit the job. The benchmark outputs its results to standard output, which is redirected to a file prefixed with the cobalt job id.
+* Run `bsub run.bsub` to submit the job. The benchmark outputs its results to standard output, which is redirected to a file prefixed with the cobalt job id.

@@ -1,0 +1,1526 @@
+{
+  "protocol": "verbs://", 
+  "log": "info", 
+  "server": {
+    "rpc-thread-count": 0, 
+    "use-progress-thread": false
+  }, 
+  "client": {
+    "use-progress-thread": false
+  }, 
+  "benchmarks": [
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 64, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 256, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1024, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4096, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16384, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 65536, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 64, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 256, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1024, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4096, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16384, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 65536, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 64, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 256, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1024, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4096, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16384, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 65536, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 64, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 256, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1024, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4096, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16384, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "jsoncpp", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 65536, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 64, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 256, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1024, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4096, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16384, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": true, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 65536, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 64, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 256, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1024, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4096, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16384, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/mnt/bb/carns/mydb", 
+        "type": "null", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 65536, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 64, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 256, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 1024, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 4096, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 16384, 
+      "type": "store-multi"
+    }, 
+    {
+      "use-json": false, 
+      "repetitions": 1, 
+      "collection": {
+        "path": "/dev/shm/mydb", 
+        "type": "unqlite", 
+        "database-name": "mydb", 
+        "collection-name": "mycollection"
+      }, 
+      "records": {
+        "fields": 12, 
+        "num": 131072, 
+        "key-size": [
+          4, 
+          12
+        ], 
+        "val-size": [
+          1, 
+          32
+        ]
+      }, 
+      "batch-size": 65536, 
+      "type": "store-multi"
+    }
+  ], 
+  "seed": 1234
+}
