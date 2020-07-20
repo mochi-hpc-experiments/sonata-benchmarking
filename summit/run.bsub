@@ -12,6 +12,7 @@ set -eu
 
 CONFIG=config.json
 HERE=`basename "$0"`
+ROOT="$HERE/.."
 #export MARGO_ENABLE_PROFILING=1
 #export MARGO_ENABLE_DIAGNOSTICS=1
 
@@ -21,7 +22,7 @@ spack env activate .
 spack load -r mochi-sonata
 
 echo "Starting benchmark"
-
-time jsrun -n 2 -r 1 -g ALL_GPUS sonata-benchmark ${CONFIG}
+export PYTHONPATH="$ROOT:$PYTHONPATH"
+time jsrun -n 2 -r 1 -g ALL_GPUS run.py
 
 echo "Done!"
