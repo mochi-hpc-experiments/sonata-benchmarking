@@ -1,5 +1,9 @@
 import collections
+import getpass
 import itertools
+
+
+DEFAULT_DB_PATH = "/mnt/bb/{0}/mydb".format(getpass.getuser())
 
 
 def with_protocol(protocol):
@@ -50,7 +54,7 @@ def iterablize(val):
     return val
 
 
-def with_benchmark(use_json=True, repetitions=1, db_path="/mnt/bb/pmatri/mydb", db_types="unqlite",
+def with_benchmark(use_json=True, repetitions=1, db_path=DEFAULT_DB_PATH, db_types="unqlite",
                    db_name="mydb", collection_name="mycollection", record_fields=12, record_num=131072,
                    key_sizes=(4, 12), val_sizes=(1, 32), batch_sizes=(1), type="store-multi"):
     use_json = iterablize(use_json)
